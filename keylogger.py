@@ -60,8 +60,12 @@ def butaction():
 
 
 f1 = Frame()
+f2 = Frame()
 f1.grid(padx=(150,0),pady=(50,10))
+f2.grid(padx=(150,0),pady=(20,5))
 
-b1 = Button(f1,text="Start Keylogger",command= butaction)
+b1 = Button(f1,text="Start Keylogger",command= butaction,width=12)
 b1.pack()
+b2 = Button(f2,text="Stop",command = root.destroy,width=12)
+b2.pack()
 root.mainloop()
